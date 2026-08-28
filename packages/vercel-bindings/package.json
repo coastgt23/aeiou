@@ -1,0 +1,23 @@
+{
+	"name": "@repo/vercel-bindings",
+	"version": "0.1.0",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"main": "src/index.ts",
+	"scripts": {
+		"check:lint": "run-oxlint",
+		"check:types": "run-tsc"
+	},
+	"dependencies": {
+		"@libsql/client": "0.15.15",
+		"@vercel/blob": "1.1.1",
+		"@vercel/kv": "3.0.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "4.20260630.1",
+		"@repo/tools": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@types/node": "26.0.1"
+	}
+}
